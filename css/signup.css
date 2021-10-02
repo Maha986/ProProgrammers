@@ -1,0 +1,433 @@
+.modal
+ {
+  display: none; /*Hidden by default*/
+  position: fixed; /* Stay in place */
+  z-index: 4; /* Sit on top */
+  padding-top: 40px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height:100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content 
+{
+  position: relative;
+  background-color: #fefefe;
+  height: auto;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  height:auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop
+{
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop 
+{
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+ .close {
+  color: white;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  padding-right: 10px;
+} 
+
+.close:hover,
+.close:focus 
+{
+  color:red;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+ .modal-header 
+ {
+ 
+  height:400px;
+}
+.modal-body form
+{
+    width:80%;
+    margin:10px auto auto auto;
+    line-height: 1em;
+}
+.modal-body {
+      text-align: left;
+      padding: 15px;
+      line-height: 3em;
+      
+}
+.modal-body h2,.modal-body h4{   
+text-align: center;
+line-height: 1.5em;
+}
+.modal-body p {
+        text-align: center;
+        line-height: 2em;
+ }
+#login-password,#forgot_password,#confirmforgot_password{
+     width: 95%;
+  }
+#signup-modal input,#login-modal input,#forgot-modal input {
+      width: 95%;
+      padding: 10px;
+      margin: 5px 0 15px 0;
+      display: inline-block;
+      border: none;
+      border-bottom: 1px solid grey
+}
+
+#signup-modal input:focus,#login-modal input:focus{
+    outline: none;
+  }
+   
+    
+ /* css of signup modal */
+#signup-modal .modal-header{
+  background: url("../HomeImages/signup.jpg") no-repeat center center/cover;
+}
+#code-form{
+  width:80%
+ }
+ #code-error{
+  margin-bottom: 10px;
+
+  margin-top: 0px;
+}
+
+ 
+  .modal-body p {
+    text-align: center;
+    line-height: 2em;
+  }
+  input#show-password, input#rememberme
+  {
+    width: 5%;
+    display: inline;
+  }
+
+  #login-password,#forgot_password,#confirmforgot_password{
+    width: 95%;
+  }
+#signup-modal input,#login-modal input{
+  /* width: 95%; */
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+#login-modal input
+{
+  width:95%;
+}
+ #signup-modal input:focus,#login-modal input:focus {
+  /* background-color: #ddd; */
+  outline: none;
+} 
+#submit-code{
+ float:left;
+}
+#resend-code{
+  float:right;
+}
+#code-form button{
+
+  height: 40px;
+  width: 110px;
+  margin: auto;
+  position:relative;
+}
+
+#signup-form{
+  margin-top:60px;
+}
+#signup-form button{
+  width: 100%;margin-top:20px;
+}
+
+
+#signupsuccess{
+  display: none; padding-top: 30px;background-color: transparent;
+  background-color: rgba(0,0,0,0);
+}
+#signupsuccess .modal-content{
+  border-radius: 10px;background-color:lightgreen;color:forestgreen;
+}
+#signupsuccess .close{
+  font-size:20px; color:forestgreen;
+}
+
+
+
+
+#rememberme{
+  width:unset;
+}
+
+#login-form{
+ margin-top:10px;
+}
+
+#signup-msg,#login-msg,#forgot-msg{
+  color:#38641e;
+  font-weight: bold;
+  display: none;
+  line-height:2em;
+  text-align:center;
+  margin-top: 5px;
+}
+
+#login-msg{
+  color: red;
+}
+
+.error{
+  display: none;margin-bottom: 10px;font-size:0.9em;color:red;
+}
+input#rememberme {
+  width: unset;
+}
+#forgotcode-error{
+
+margin-bottom: 5px;
+}
+hr{
+  margin-left:10%;
+  margin-right:10%;
+}
+
+#btnlogin{
+  width: 100%;margin-top:10px;
+}
+
+
+#submit-code-forgot{
+  float:left;
+}
+#resend-code-forgot{
+  float:right;
+
+
+}
+#forgot-code button{
+  height: 40px;
+  /* margin-top:10px; */
+  width: 150px;
+  position: relative;width:90px;
+}
+
+#submit-email-forgot{
+height: 40px;width: 150px;margin-left:35%;
+}
+#forgot-email{
+  margin-top: 40px;
+}
+#forgot-code{
+  display:none;margin-top:10px;
+}
+
+#set-password{
+  display:none;width:90%;margin:auto;margin-top:60px;
+}
+#set-password button{
+width: 100%;
+}
+#backtologin p{
+  margin-top:30px;
+  display: inline-block;
+}
+#backtologin{
+  text-align: center;
+}
+.ordiv{
+ /* width:10%; */
+
+  background-color:#fefefe;
+  position: relative;
+  top:-20px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left:5px;
+  padding-right:5px;
+  width:50px;
+}
+
+
+
+#googlebtn{
+  margin-top:30px;width:130px;position:relative;left:37%
+}
+#line{
+ margin-top:35px
+}
+
+
+#login-modal .modal-header{
+  background: url("https://thumbs.dreamstime.com/b/web-development-coding-programming-internet-technology-business-concept-web-development-coding-programming-internet-technology-122741764.jpg") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#forgot-modal .modal-header{
+  
+  background: url("https://mlqmtwka8c9g.i.optimole.com/gOh5_1g.Ga1T~1cfa5/w:auto/h:auto/q:75/https://www.competethemes.com/wp-content/uploads/2020/01/wordpress-change-password.png")  no-repeat center center/cover;;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+  .modal-content {
+   
+    width: 80%;
+   
+  }
+  .modal-body form{
+    padding: 5px;
+    width:80%;
+    margin:auto;
+    height: auto;
+    }
+    .modal-body form button{
+      width:100%;
+     
+     
+    }
+    #code-form{
+      width:100%
+     }
+    .modal-body p{
+    text-align: center;
+    
+      
+    }
+    #login-password,#forgot_password,#confirmforgot_password{
+      width: 90%;
+    }
+    
+ 
+}
+@media screen and (max-width:400px) {
+ 
+  #login-password,#confirmforgot_password,#forgot_password{
+    width: 86%;
+  }
+  #googlebtn{
+    margin-top:30px;position:relative;left:13%;
+    }
+    #submit-email-forgot{
+      margin-left:16%;
+       }
+
+}
+@media screen and (max-width:281px) {
+  #googlebtn{
+    margin-top:30px;width:130px;position:relative;left:5%
+    }
+    
+  
+}
+
+@media screen and (max-width:291px) {
+  #submit-email-forgot{
+    margin-left:10%;
+     }
+}
+@media  (min-width:401px) and (max-width:500px) {
+  #googlebtn{
+    margin-top:30px;position:relative;left:20%;
+    }
+    #submit-email-forgot{
+     margin-left:25%;
+      }
+      
+}
+
+@media  (min-width:321px) and (max-width:380px) {
+  #googlebtn{
+    margin-top:30px;position:relative;left:17%;
+    }
+
+}
+@media  (min-width:500px) and (max-width:564px) {
+  #googlebtn{
+    margin-top:30px;width:130px;position:relative;left:30%
+    }
+  
+}
+@media  (min-width:565px) and (max-width:800px) {
+  
+     #googlebtn{
+    margin-top:30px;width:130px;position:relative;left:30%
+    }
+      
+
+  
+}
+@media  (min-width:501px) and (max-width:541px) {
+  #googlebtn{
+    margin-top:30px;width:130px;position:relative;left:30%
+    }
+   
+}
+@media  (min-width:542px) and (max-width:800px) {
+  #googlebtn{
+    margin-top:30px;width:130px;position:relative;left:35%
+    }
+   
+}
+@media  (min-width:801px) and (max-width:1255px) {
+  .modal-content { 
+    width: 70%; 
+  }
+  .modal-body form{
+    padding: 10px;
+    width:80%;
+    margin:auto;
+    
+    }
+    .modal-body form button{
+      width:100%;
+     
+    }
+    .modal-body form button i{
+     font-size: 10px;
+    }
+    #login-password,#forgot_password,#confirmforgot_password{
+      width: 90%;
+    }
+    
+    
+}
+

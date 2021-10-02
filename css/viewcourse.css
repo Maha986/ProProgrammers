@@ -1,0 +1,313 @@
+
+        #mainpage {
+            display: grid;
+            grid-template-columns: 1.2fr 3.2fr 1fr;
+
+        }
+        .main-description input {
+            width: 100%;
+        }
+        #navigation {
+            border-right: 1px solid rgb(165, 165, 165);
+            padding-top: 28px;
+        }
+        div#errormsg button {
+            margin: 0px auto;
+            padding: 5px 0px;
+            text-decoration: underline;
+            background: transparent;
+            border: none;
+            color: floralwhite;
+            text-align: center;
+            /* width: 35%; */
+        }
+        .myinput[type="checkbox"]:before{
+    position: relative;
+    display: block;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #808080;
+    content: "";
+    background: #FFF;
+}
+section#center {
+    padding-left: 12px;
+}
+.myinput[type="checkbox"]:after{
+    position: relative;
+    display: block;
+    left: 1px;
+    top: -12px;
+    width: 11px;
+    height:11px;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: #ffffff #ffffff #ffffff #ffffff; */
+    content: "";
+    background-color:#fcfafa;
+    /* background-repeat: no-repeat;
+    background-position:center; */
+}
+       .myinput[type="checkbox"]:checked:after{
+    background-color:#1eb2a6;
+}
+        #notespage {
+            border-left: 1px solid rgb(165, 165, 165);
+        }
+
+        #center input:not(input[type=submit],input[type=button]),#center pre
+        {
+            color: black;
+            cursor: text;
+        }
+        #center input[type=button]
+        {
+            color: white !important;
+        }
+        #center input[type=button]:active
+        {
+            transform: scale(1.02);
+        }
+        #center input[type=radio]
+        {
+            cursor: pointer !important;
+        }
+        .code-detail
+        {
+            width: 80%;
+            margin: auto;
+        }
+        #center .code-detail pre
+        {
+           
+            color: white;
+        }
+        section#practice
+        {
+            font-size: unset;
+        }
+        #newpage hr
+        {
+            margin: unset;
+            margin-left: -13px;
+        }
+        #newpage
+        {
+            width: 100%;
+        }
+        .main-description
+        {
+           
+            margin-bottom: 25px;
+        }
+        #btn-section
+        {
+            width: 96%;
+            margin-top: 12px;
+        }
+        #center input,#center pre
+        {
+            border: none;
+            
+        }
+        pre {
+    white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+    white-space: -o-pre-wrap; /* Opera */
+    white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+    word-wrap: break-word; /* IE 5.5+ */
+}
+#quiztop h2
+{
+    text-align: center;
+}
+#navclose
+{
+    position: absolute;
+    top: 5px;
+    right: 6;
+    right: 10px;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    display:none;
+}
+#quiz-form h4
+{
+    margin-bottom: 12px;
+}
+#msg
+    {
+        color: #eed8d8;
+        padding: 7px;
+        text-align: center;
+        font-size: 1.2rem;
+        display: inline-block;
+        width: 93%;
+    }
+    #errormsg span
+    {
+        float: right; padding: 7px;
+        cursor: pointer;
+    }
+    #errormsg
+    {
+        background-color: #db2929; 
+        overflow: hidden;
+        display: none; 
+        position: sticky;
+        top: 50px; 
+        z-index: 10;
+    }
+#titlecourse
+{
+    display: none;
+}
+#titlecourse p
+{
+    border: none;
+    text-align: center;
+    margin: auto;
+}
+#titlecourse>div
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+#hamburger {
+    color: black;
+    /* background-color: #931b1b00; */
+    font-size: 17px;
+    padding: 4px;
+    background-color: #454e4d;
+    color: white;
+    display: none;
+    border-radius: 0;
+    float: right;
+}
+#title-of-course
+{
+    margin-bottom: 14px;
+}
+#tuttogglebtn
+{
+    position: relative;
+    right: 9px;
+    top:14px;
+}
+#title-of-course i
+{
+    margin: 0px 5px;
+}
+#title-of-course p
+{
+    border: none;
+    padding: none;
+    margin: none;
+}
+@media screen and (max-width:970px) {
+    #tuttogglebtn
+    {
+        top: 0px;
+    }
+    #navigation img,#navigation i,.moduleul li a,#navigation h1
+    {
+        color: white;
+    }
+    #mainpage
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .topicul li a
+    {
+        color: #e7ca81;
+    }
+    .subtopicul li a
+    {
+        color: #ec8f8f;
+    }
+    #notespage
+    {
+    border-left: 1px solid rgb(165, 165, 165);
+    }
+    #newpage hr
+        {
+            margin: unset;
+        }
+
+    #navigation
+    {
+        
+    display: none;
+        border-right: 1px solid rgb(165, 165, 165);
+    padding-top: 28px;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 0px;
+    z-index: 12;
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    }
+    #hamburger
+    {
+        display: inline-block;
+        width: 37px;
+    }
+    #center
+    {
+        padding: 15px 25px;
+    }
+    #navclose
+    {
+        display: block;
+    }
+    #title-of-course label
+    {
+        display: none;
+    }
+    #title-of-course p
+    {
+       
+        text-align: center;
+       
+    }
+    #title-of-course p
+    {
+        left: 51px;
+    }
+    #notespage>div
+    {
+        position: unset !important;
+    }
+}
+@media screen and (max-width:590px) {
+
+    #titlecourse
+    {
+        display: block;
+    }
+    #title-of-course
+    {
+        display: none;
+    }
+    #tuttogglebtn
+    {
+        
+    padding: 9px;
+    }
+    
+}
+
+@media screen and (min-width:971)
+{
+    #navigation
+    {
+        width: unset;
+        
+    }
+}

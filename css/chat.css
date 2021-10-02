@@ -1,0 +1,44 @@
+h2{
+    text-align: center;
+    font-weight: bold;
+    margin:20px auto;
+}
+#chat-div{
+    margin:auto;width:80%;
+}
+#comment-area{
+    display: flex;
+}
+#comment-area+div{
+    margin-top: 10px;
+}
+#display-comment{
+   display: inline-block;width:100%;border:1px solid black;
+}
+.comment-panel{
+    height:100%;display:block;margin-bottom:15px;border:2px solid #1eb2a6;
+}
+.comment-header{
+    min-height:40px;max-height:auto;background-color:#1eb2a6;color:white;padding:10px;
+}
+.comment-header div{
+    text-align: right;
+}
+.comment-body{
+    min-height: 60px;max-height:auto;background-color:white;padding:10px;
+}
+.comment-footer{
+  min-height:50px;max-height:auto;background-color:rgb(198, 231, 230);
+}
+.comment-footer button{
+    float:right;
+    margin-right:5px;
+    display:inline-block; margin-top:5px;min-height:40px;max-height:auto;width:30px;
+    background-color: #1eb2a6;color:white ;border:none;border-radius: 4px;;
+}
+
+@media screen and (max-width:601px) {
+    #reply-comment{
+       margin-left: 0px !important;
+       }
+  }

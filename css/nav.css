@@ -1,0 +1,351 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+#topbox
+{
+    overflow: hidden;
+}
+#topbox h3
+{
+    font-size: 25px;
+}
+#topbox p
+{
+    font-size: 12px;
+}
+#title
+{
+    margin: 0px 34px;
+    cursor: pointer;
+    float: left;
+}
+#title h3:hover
+{
+    color: #1eb2a6;    
+}
+.innerdiv
+{
+    margin: 12px; 
+} 
+/* login and register div */
+#users
+{
+    float: right
+}
+#users button i
+{
+    font-size: 18px;
+    padding: 0px 5px;
+}
+/* fb insta div */
+#pages
+{
+    margin: 4px 64px;
+    position: relative;
+    bottom: 4px;
+    float: right;
+}
+.pagebtn
+{
+    background-color: #f1f1f16b;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+    color: #1eb2a6;
+}
+.pagebtn:hover
+{
+    background-color: #1eb2a6;
+    color: honeydew;
+}
+.btn
+{
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 9px;
+    cursor: pointer;
+}
+.userbtn:hover
+{
+    background-color: teal;
+    color:whitesmoke;
+}
+
+header
+{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+#homenav
+{
+    height: 50px;
+    background-color: #1eb2a6; 
+    overflow: hidden;
+}
+#homenav
+{
+    position: sticky;
+}
+.links
+{
+    float: left;
+}
+#searchbtn
+{
+    float: right;
+}
+.links a
+{
+    padding: 12px;
+    margin: 0px 12px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1em;
+    cursor: pointer;
+}
+.links a:hover, .links a:focus
+{
+    text-decoration: underline;
+}
+
+.btnicon
+{
+    font-size: 20px;
+    
+}
+
+
+
+.search
+{
+    font-size: 17px;
+    height: 20px;
+    border-radius: 14px;
+    outline: none;
+    border-color: #99c5c1;
+    border-style: double;
+    padding-left: 7px;
+}
+.search:focus
+{
+    border: 2px double #1eb2a6;
+}
+.searchbtn
+{
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: -6px;
+    right: 11px;
+    float: right;
+}
+.searchit
+{
+    float: right;
+    /* display: none; */
+    font-size: 16px;
+    position: relative;
+    color: #1eb2a6;
+    background-color: transparent;
+    top: -3px;
+}
+.searchit:hover
+{
+    
+    background-color: #1eb2a6;
+    color: whitesmoke;
+}
+#profilebar{
+    cursor:pointer;background-color:#1eb2a6;height:40px;width:40px;border-radius:50%;
+    display:inline-block;position:relative;
+    top:11px;text-align:center;padding:10px;font-size:1.2em;color:white;right:30px;
+}
+#innertopbox
+{
+    display: block;
+    height: 63px;
+}
+/* button for menu */
+button#menubtn:active {
+    box-shadow: 2px 5px 15px 1px grey;
+}
+button#menubtn i {
+    font-size: 21px;
+}
+#menubtn {
+    background-color: #f1f1f16b;
+    height: 32px;
+    width: 37px;
+    border: none;
+    position: relative;
+    bottom: 8px;
+    cursor: pointer;
+    float: right;
+    margin: 7px;
+    display: none;
+    margin-right:40px;
+}
+
+#mobilemenu
+{
+   display: none;
+   background-color: whitesmoke;
+   width: 100%;
+}
+
+#mobilelinks
+{
+    display: block;
+    
+    text-align: center;
+}
+#mobilelinks a
+{
+    
+    display: block;
+    margin: 8px;
+    color: teal;
+}
+#mobilelinks a:hover
+{
+    color: whitesmoke;
+    background-color: teal;
+}
+#mobilemenu > .searchdiv
+{
+    margin: auto; 
+    width: 245px;height: 32px;
+}
+.profilediv{
+    width:100px;background-color:white;position:absolute;display:none;z-index:100;
+    top:52px;right:10px;
+ }
+ .profilediv li{
+     padding: 7px;
+ }
+ .profilediv ol{
+     list-style-type: none;
+ }
+ .profilediv li:hover{
+     background-color:#1eb2a6 ;
+ }
+ 
+ .main {
+     display: block;
+
+ }
+#bsearchit
+{
+    color: white;
+}
+@media screen and (max-width:900px) {
+    header
+    {
+        display: none;
+    }
+    #topbox
+    {
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        background-color: #e2e2e2;
+    }
+    .links
+    {
+        float: none;
+    }
+    .searchbtn
+    {
+        border-radius: 16px;
+        padding: 0px;
+    }
+    .searchbtn:hover, .searchbtn:active
+    {
+        background-color:#1eb2a6;
+        color: whitesmoke;
+    }
+    #menubtn
+    {
+        display: inline;
+    }
+    #pages
+    {
+        margin: 4px 0px;
+    }
+}
+
+@media screen and (max-width:778px)
+{
+    
+    .pagebtn:not(#notebtn):not(#assbtn):not(#chatbtn):not(.searchit){
+        display: none;
+    }
+} 
+@media (min-width:376px) and (max-width:490px) {
+
+#pages
+    {
+        
+        margin: 6px 30px 0px 0px;
+    }
+
+}
+@media (min-width:342px) and (max-width:376px) {
+    #pages
+    {
+        margin: 0px 10px 0px 0px;
+        
+       
+    }
+     
+}
+@media (max-width:342px) {
+   
+    #pages
+        {
+          
+            margin: 0px 20px 0px 0px;
+           
+        }
+    
+    }
+@media screen and (max-width:400px) 
+{
+    #title
+    {
+        width:100%;
+    }
+    #menubtn
+    {
+        float: left;
+        /* top: 2px; */
+    left: 0;
+    }    
+    #innertopbox
+    {
+        height: 95px;
+    }
+    .profilediv 
+    {
+        top: 95px;
+    }
+    
+}

@@ -1,0 +1,19 @@
+{
+    "require": {
+        "google/apiclient": "2.7",
+        "setasign/fpdf": "1.8.*",
+        "setasign/fpdi": "1.*",
+        "phpoffice/phpword": "^0.16.0"
+       
+    },
+    "scripts": {
+        "post-update-cmd": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Drive",
+            "YouTube"
+        ]
+    }
+    
+}

@@ -1,0 +1,491 @@
+.course-material {
+
+    display: block;
+    padding: 6px;
+    /* box-sizing: content-box; */
+    margin: 7px;
+    width: 40%;
+    border: none;
+    background-color: transparent;
+    border-radius: 17px;
+    border-bottom: 2px solid teal;
+    
+    
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    outline: none;
+    line-height: 28px;
+}
+#hamburger {
+    color: black;
+    /* background-color: #931b1b00; */
+    font-size: 17px;
+    padding: 4px;
+    background-color: #454e4d;
+    color: white;
+    display: none;
+    border-radius: 0;
+}
+.course-material:focus {
+    box-shadow: lightseagreen 0px 0px 4px;
+}
+
+#main-page label,#title-of-course label {
+    margin-left: 36px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-variant-caps: small-caps;
+}
+
+/* 
+#topic {
+position: relative;
+left: 49px;
+}
+
+.main-description {
+position: relative;
+left: 150px;
+} */
+
+.description-box {
+    border: 2px solid teal;
+    width: 100%;
+}
+#newpage,#assignment
+{
+    width: 85%;
+}
+/* #assignment,#practice
+{
+    display: none;
+} */
+/* .btnsdiv,
+#btn-section {
+    width: 85%;
+} */
+
+.right {
+    float: right;
+}
+
+#quiz-form h4
+{
+    background-color: #1eb2a6;
+    color: white;
+    margin-top: 12px;
+    width: 95%;
+}
+
+div#errormsg button {
+    display: inline-block;
+    color: #890202;
+    background: antiquewhite;
+    margin: 4px 1px;
+    cursor: pointer;
+    padding: 3px;
+    display: inline;
+}
+#quizsave {
+    cursor: pointer;
+}
+.textarea-buttons button {
+    padding: 7px;
+    color: whitesmoke;
+    background: #1eb2a6;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    outline: none;
+}
+
+.textarea-buttons button:hover {
+    box-shadow: gray 2px 2px 5px;
+}
+
+.textarea-buttons button:active {
+    transform: scale(1.05);
+}
+#submitassbtn:active
+{
+    transform: scale(1.01);
+}
+#submitassbtn
+{
+    display: block;
+            font-size: 1.2rem;
+            padding: 2px;
+            background-color: #1eb2a6;
+            color: whitesmoke;
+            border: none;
+            width: 100%; cursor: pointer; border-radius: 0;
+}
+#main-page {
+    display: flex;
+}
+
+#navigation-menu {
+    width: 20%;
+    border-right: 1px solid rgb(165, 165, 165);
+}
+
+#right-side {
+    width: 80%;
+    padding-left: 20px;
+}
+
+.codesnippet {
+    padding: 23px 20px;
+    margin: 17px 0px;
+    background-color: black;
+    color: white;
+    border-radius: 17px;
+}
+
+.codesnippet textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.codesnippet textarea::placeholder {
+    color: #a6a6a6;
+}
+
+
+.codecopy {
+    float: right;
+    margin: -13px -9px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+}
+
+.codecopy:active {
+    transform: scale(1.2);
+}
+
+.code-detail {
+    display: none;
+}
+#practice .code-detail
+{
+    display: block;
+}
+
+.editbtn,
+.saveedit {
+
+    display: none;
+}
+
+.additiondiv {
+    margin: 27px 0px 7px 0px;
+}
+#quizclose
+{
+    color:#1eb2a6;
+    font-size: 32px;
+
+}
+#errormsg
+{
+    /* height: 41px;  */
+    background-color: #db2929; 
+    display: none; 
+    position: sticky;
+    top: 50px; 
+    z-index: 10;
+}
+button#quizedit {
+    padding: 3px 9px;
+    float: right;
+    margin: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: #1eb2a6;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: none;
+}
+button#quizedit:active {
+    border: 1.5px solid rgb(214, 209, 209);
+}
+#msg
+{
+    color: #eed8d8;
+    padding: 7px;
+    text-align: center;
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 93%;
+}
+#errormsg span
+{
+    float: right; margin: 8px 18px;
+    cursor: pointer;
+}
+#quiz-modal input {
+    padding: 5px 2px;
+    font-size: 1.1rem;
+}
+#quiz-form label
+{
+        margin-left: 0px;
+    font-size: unset;
+   padding: 10px;
+        display: inline-block;
+        width: 100%;
+    
+   
+    /* font-weight: bold; */
+     font-variant-caps: unset;
+}
+#quiz-modal .modal-header{
+    height: 30px;
+  }
+  
+  #quiz-modal input{
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid grey;
+  }
+   #quiz-modal input:focus{
+    /* background-color: #ddd; */
+    outline: none;
+  } 
+
+  #navigation-menu h1,#navigation h1
+  {
+      color: #1eb2a6;
+  }
+  button#assEdit,#assEditsave {
+    /* display: list-item; */
+    margin: 0px 12px;
+}
+#navclose
+{
+    position: absolute;
+    top: 5px;
+    right: 6;
+    right: 10px;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    display:none;
+}
+div#myvideoModal {
+    z-index: 30;
+}
+  #navigation-menu li a
+  {
+    border-bottom: 2px solid #064e48;
+    
+    display: inline-block;
+  }
+  #navigation-menu ul,
+  #navigation-menu li,#navigation ul,#navigation li {
+      display: block;
+      cursor: pointer;
+      font-size: 1.12rem;
+  }
+  #navigation-menu ul ul,#navigation ul ul {
+      display: none
+  }
+
+  #navigation-menu ul,#navigation ul{
+      list-style-type: none;
+  }
+
+  .moduleul {
+      margin-left: 30px;
+  }
+.moduleul li a
+{
+    /* background-color: #a6a6a6; */
+    color: teal;
+    width: 95%;
+}
+  .topicul {
+      margin-left: 8px;
+  }
+.topicul li a
+{
+    color: goldenrod;
+    width: 95%;
+}
+  .subtopicul {
+      margin-left: 20px;
+  }
+.subtopicul li a
+{
+    color: indianred;
+    width: 100%;
+}
+  #navigation-menu li,#navigation li {
+      margin: 10px 0px;
+      
+  }
+  #navclose
+  {
+      display: none;
+  }
+  .align-center {
+    height: 50vh;
+    margin-top: 79px;
+    flex-direction: column;
+    /* background-color: #125d9f; */
+    /* text-align: center; */
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+  }
+.align-center p
+{
+    width: 70%;
+    margin-bottom: 26px;
+}
+.align-center button
+{
+        height: 90px;
+        font-size: 1.3rem;
+    
+}
+.videoupload
+{
+    width: 100%;
+    border-radius: 0px;
+    margin: 7px;
+}
+#myvideoModal .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+a#uploadvideo {
+    color: whitesmoke;
+    text-decoration: none;
+}
+/* Modal Content */
+#myvideoModal .modal-content {
+    background-color: white;
+    margin: 50px auto;
+    padding: 6px;
+    border: 6px double #1eb2a6;
+    width: 80%;
+}
+
+/* The Close Button */
+#myvideoModal .closevideo {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#myvideoModal .closevideo:hover,
+#myvideoModal .closevideo:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px)
+{
+    #navigation-menu {
+        display: none; border-right: 1px solid rgb(165, 165, 165);
+        padding-top: 28px;
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        width: 0px;
+        z-index: 12;
+        background-color: black;
+        height: 100vh;
+        position: fixed;
+    }
+    #right-side {
+        width: 100%;
+    }
+    #navigation-menu img,#navigation-menu i,.moduleul li a,#navigation-menu h1
+    {
+        color: white;
+    }
+    .topicul li a
+    {
+        color: #e7ca81;
+    }
+    .subtopicul li a
+    {
+        color: #ec8f8f;
+    }
+    #hamburger
+    {
+        display: inline-block;
+        width: 37px;
+    }
+    #navclose
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .course-material {
+        width: 60%;
+    }
+
+    .description-box {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .description-details,
+    .btnsdiv,
+    #btn-section {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .course-material{
+        width: 90%;
+    }
+    #assignment .course-material {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 300px) {
+    button{
+        float: right;
+        margin: 5px 3px;
+    }
+}

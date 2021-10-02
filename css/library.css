@@ -1,0 +1,264 @@
+/* library nav bar */
+#librarybar
+{
+    padding: 11px 11px 11px 0px;
+    width: 85%;
+    margin:auto;
+    border: 0.5px solid #8f8d8d;
+    height: unset;
+    background-color: transparent;
+}
+#librarybar a,#uploadbtn
+{
+    color: black;
+    border-left: 0.5px solid #bebdbd;
+    border-right: 0.5px solid #bebdbd;
+    text-decoration: none;
+    padding: 12px;
+    cursor: pointer;
+}
+.lib-btn
+{
+    background-color: whitesmoke;
+    color: #1eb2a6;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    /* width: 89px;/ */
+    font-size: 0.85rem;
+    outline: none;
+}
+.lib-btn:hover
+{
+    box-shadow: gray 2px 5px 15px 1px;
+}
+#librarybar a
+{
+    border: none;
+}
+#librarybar ul
+{
+    list-style-type: none;
+}
+#librarybar ul li
+{
+    display:inline;
+     position: relative;
+}
+#librarybar ul li ul
+{
+    background-color: whitesmoke;
+    position: absolute;
+    left: 0;
+    display: none;
+    padding: 0px;
+    box-shadow: 3px 3px 5px 1px grey;
+}
+#librarybar ul li:hover #langMenu
+{
+    box-shadow: gray 2px 5px 15px 1px;
+    display: block;
+}
+#librarybar ul li ul li
+{
+    display: block;
+    padding: 6px 0px;
+    width: 200px;
+    /* margin: 3px 0px; */
+    background-color:rgb(163, 179, 179);
+    list-style: none;
+}
+#langMenu li a
+{
+    /* display: block; */
+    color: whitesmoke;
+}
+#librarybar ul li ul li:hover
+{
+    background-color:darkslategrey;
+    
+}
+#uploadbtn
+{
+    float: right;
+    border: none;
+    background-color: #1eb2a6;
+    border-radius: 14px;  
+    cursor: pointer; 
+}
+#uploadbtn:active
+{
+    border:1px solid teal;
+}
+#uploadbtn a
+{
+    border: none;
+    color: whitesmoke;
+}
+#uploadbtn i
+{
+    color: whitesmoke;
+    font-size: 18px;
+}
+/* modal for uploading books activating on upload button*/
+.upload-material-modal,#pdf-viewer-modal
+{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0,0.4);
+}
+.inner-modal
+{
+    background-color: #ffffff;
+    margin: 9% auto;
+    padding: 6px;
+    border: 6px double #1eb2a6;
+    width: 80%;
+}
+#pdf-viewer-modal>.inner-modal
+{
+    margin: 0px auto;
+}
+.close-modal,#downloadIcon
+{
+    color:#aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding:0px 9px;
+    cursor: pointer;
+}
+.close-modal:hover,.close-modal:focus
+{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#libraysect
+{
+    background-color: rgb(163, 179, 179);
+    background-image: linear-gradient(to right, rgba(94, 90, 90, 0), rgba(198,221,219,1));
+}
+
+/* books being displayed */
+.booksdiv
+{
+    height: 340px;
+    width: 332px;
+    margin: 35px;
+    border: 2px solid teal;
+    cursor: pointer;
+}
+.booksdiv:hover
+{
+    box-shadow: 5px 10px 18px darkslategrey;
+}
+.documentsdiv
+{
+    width:95%; margin:auto; display: flex; flex-wrap: wrap; justify-content: center; 
+}
+#bookDiv
+{
+   flex-direction:column;
+}
+#articleDiv,#bookDiv,#searchDiv
+{
+    display:none;
+}
+.insidepadding {
+    padding: 13px;
+    width:37ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.insidepadding i {
+    font-size: 23px;
+    padding-right: 13px;
+}
+
+embed
+{
+    height: 780px;
+    width:100%;
+}
+/* library catalog search */
+#searchcatalog
+        {
+            font-size: 1.4em;
+    padding: 4px 9px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 99%;
+        }
+        #searchbar
+        {
+            width: 85%;
+            margin: auto;
+        }
+        #searchbar button
+        {
+            margin-left: -34px;
+    background-color:#1eb2a6;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    /* border-radius: 8px; */
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+        }
+        #searchbar button:active
+        {
+            color: darkslategray;
+        }
+
+
+
+@media screen and (max-width:490px) {
+            #searchcatalog
+            {
+                width:98%;
+            }
+        }
+
+@media screen and (max-width:362px) {
+    #librarybar
+    {
+        width: 95%;
+    }
+    .booksdiv
+    {
+        width: 270px;
+    }
+    .booksdiv img
+    {
+        width: 267px;
+    }
+    .insidepadding
+    {
+        width: 30ch;
+    }
+    #librarybar a
+    {
+        padding: 9px;
+    }
+}
+@media screen and (max-width:315px) {
+    #librarybar button 
+    {
+        padding: 5px;
+    }
+}
